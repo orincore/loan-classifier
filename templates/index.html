@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Approval Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="form-box">
+        <h2>Loan Approval Predictor</h2>
+        <form action="/predict" method="post">
+            <label>Gender</label>
+            <select name="Gender"><option>Male</option><option>Female</option></select>
+
+            <label>Married</label>
+            <select name="Married"><option>Yes</option><option>No</option></select>
+
+            <label>Dependents</label>
+            <select name="Dependents"><option>0</option><option>1</option><option>2</option><option>3+</option></select>
+
+            <label>Education</label>
+            <select name="Education"><option>Graduate</option><option>Not Graduate</option></select>
+
+            <label>Self Employed</label>
+            <select name="Self_Employed"><option>No</option><option>Yes</option></select>
+
+            <label>Applicant Income</label>
+            <input type="number" name="ApplicantIncome" required>
+
+            <label>Co-applicant Income</label>
+            <input type="number" name="CoapplicantIncome" required>
+
+            <label>Loan Amount (in thousands)</label>
+            <input type="number" name="LoanAmount" required>
+
+            <label>Loan Amount Term (in days)</label>
+            <input type="number" name="Loan_Amount_Term" value="360" required>
+
+            <label>Credit History</label>
+            <select name="Credit_History"><option value="1.0">Yes</option><option value="0.0">No</option></select>
+
+            <label>Property Area</label>
+            <select name="Property_Area"><option>Urban</option><option>Semiurban</option><option>Rural</option></select>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">{{ prediction }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>

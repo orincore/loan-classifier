@@ -127,19 +127,3 @@ This project is licensed under the MIT License. See `LICENSE` file for details.
 
 ````
 
----
-
-### ✅ Bonus Tip
-
-Also create a `requirements.txt` file to pin your dependencies:
-
-```txt
-streamlit
-flask
-xgboost
-scikit-learn
-pandas
-numpy
-joblib
-````
-

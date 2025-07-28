@@ -116,7 +116,7 @@ If you face model loading issues:
 ## 📬 Contact
 
 **Author:** Adarsh Suradkar
-📧 \[[YourEmail@example.com](mailto:suradkaradarsh@gmail.com)]
+📧 \[[suradkaradarsh@gmail.com](mailto:suradkaradarsh@gmail.com)]
 🔗 [LinkedIn](https://linkedin.com/in/yourprofile)
 
 ---
